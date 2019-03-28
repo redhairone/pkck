@@ -1,0 +1,32 @@
+<!ELEMENT pokedex (pokemons|trainers)*>
+        <!ELEMENT trainers (trainer)*>
+        <!ELEMENT trainer (tname,surname,age,gender,region,hometown,class+)>
+        <!ATTLIST trainer
+                trainerid CDATA #REQUIRED>
+        <!ELEMENT tname (#PCDATA)>
+        <!ELEMENT surname (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        <!ELEMENT gender (#PCDATA)>
+        <!ELEMENT region (#PCDATA)>
+        <!ELEMENT hometown (#PCDATA)>
+        <!ELEMENT class (#PCDATA)>
+        <!ELEMENT pokemons (pokemon)*>
+        <!ELEMENT pokemon (name+,type*,stats,evolutions,ratio?,height,weight)>
+        <!ATTLIST pokemon
+                id CDATA #REQUIRED
+                trainerid CDATA #REQUIRED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT type (#PCDATA)>
+        <!ELEMENT stats (HP|ATK|DEF)*>
+        <!ELEMENT HP (#PCDATA)>
+        <!ELEMENT ATK (#PCDATA)>
+        <!ELEMENT DEF (#PCDATA)>
+        <!ELEMENT evolutions (evolution)*>
+        <!ELEMENT evolution (name)>
+        <!ATTLIST evolution
+                id CDATA #REQUIRED>
+        <!ELEMENT ratio (male|female)*>
+        <!ELEMENT male (#PCDATA)>
+        <!ELEMENT female (#PCDATA)>
+        <!ELEMENT height (#PCDATA)>
+        <!ELEMENT weight (#PCDATA)>
