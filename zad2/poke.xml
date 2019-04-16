@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="poke.css"?>
 <!DOCTYPE pokedex SYSTEM "poke.dtd" >
-<pokedex>
+<pokedex:pokedex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.przyklad.pl/showroom pokedex.xsd" xmlns:pokedex="http://www.przyklad.pl/pokedex">
     <trainers>
         <trainer trainerid="t1">
             <tname>Ash</tname>
@@ -335,4 +335,4 @@
             <weight>55</weight>
         </pokemon>
     </pokemons>
-</pokedex>
+</pokedex:pokedex>
